@@ -1,0 +1,149 @@
+<?php
+$success = false;
+$error = false;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $to = "your-email@example.com"; // <-- Change to your email
+    $subject = "Portfolio Contact from " . htmlspecialchars($_POST["name"]);
+    $message = "Name: " . htmlspecialchars($_POST["name"]) . "\n";
+    $message .= "Email: " . htmlspecialchars($_POST["email"]) . "\n";
+    $message .= "Message:\n" . htmlspecialchars($_POST["message"]);
+    $headers = "From: " . htmlspecialchars($_POST["email"]);
+    if (mail($to, $subject, $message, $headers)) {
+        $success = true;
+    } else {
+        $error = true;
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MANOJ M - Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Manoj M</div>
+      <div class="right">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Technical Skills</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="first" id="about">
+      <div class="leftsection">
+        <p>Hi! I am <span class="purple">Manoj M</span></p>
+        <div>I am a passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <a href="C:\manu\MANOJ_M_Updated_Resume_Spaced.pdf">
+            <button class="btn">Download Resume</button>
+          </a>
+          <a href="https://github.com/" target="_blank">
+            <button class="btn">Visit GitHub</button>
+          </a>
+        </div>
+      </div>
+      <div class="rightsection">
+        <img src="C:\Users\manoj\OneDrive\Pictures\Manoj m pic.jpg" alt="Manoj M Picture">
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="secondsection" id="skills">
+      <h2>Technical Skills</h2>
+      <div class="box">
+        <div class="vertical"><img src="https://img.icons8.com/color/96/html-5--v1.png"><span>HTML</span></div>
+        <div class="vertical"><img src="https://img.icons8.com/color/96/css3.png"><span>CSS</span></div>
+        <div class="vertical"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxlTaDaAe905XCf1vnubMQiMd4bqzej_Y-Fg&s"><span>MySQL</span></div>
+        <div class="vertical"><img src="https://img.icons8.com/color/96/python--v1.png"><span>Python</span></div>
+        <div class="vertical"><img src="https://img.icons8.com/color/96/javascript--v1.png"><span>JavaScript</span></div>
+        <div class="vertical"><img src="https://img.icons8.com/offices/80/php-logo.png"><span>PHP</span></div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-boxes">
+
+        <div class="project-box">
+          <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/external-blood-donation-medical-flaticons-lineal-color-flat-icons.png">
+          <h3>Blood Donor Management System</h3>
+          <p>Developed using <b>PHP and MySQL</b>, this system manages donors, recipients, and donation records with <span class="purple">real-time updates</span>.</p>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" class="btn-link">GitHub</a>
+            <a href="#" target="_blank" class="btn-link">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img src="https://img.icons8.com/external-flat-icons-vectorslab/100/external-deep-learning-artificial-intelligence-flat-icons-vectorslab.png">
+          <h3>Skin Disease Detection</h3>
+          <p>Created with <b>MATLAB, Image Processing, and Deep Learning</b>. This project classifies skin diseases using <span class="purple">AI-powered image analysis</span>.</p>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" class="btn-link">GitHub</a>
+            <a href="#" target="_blank" class="btn-link">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/external-portfolio-web-development-flaticons-lineal-color-flat-icons.png">
+          <h3>Portfolio Website</h3>
+          <p>A <b>responsive personal portfolio</b> crafted with HTML, CSS, and JavaScript, showcasing my <span class="purple">skills and projects</span>.</p>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" class="btn-link">GitHub</a>
+            <a href="#" target="_blank" class="btn-link">Live Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm" method="post" action="" autocomplete="off">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <div id="form-message">
+          <?php if($success): ?>
+            <span class="success-anim" style="color:#16a34a;font-weight:bold;">Message sent successfully!</span>
+          <?php elseif($error): ?>
+            <span style="color:#dc2626;font-weight:bold;">Oops! Something went wrong. Try again later.</span>
+          <?php endif; ?>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Manoj M | All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: [
+        'Web Developer ',
+        'Python Programmer ',
+        'Frontend Enthusiast ',
+        'Let\'s build something awesome together!'
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+    });
+  </script>
+</body>
+</html>
