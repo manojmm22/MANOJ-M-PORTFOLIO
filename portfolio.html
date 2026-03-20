@@ -1,20 +1,4 @@
-<?php
-$success = false;
-$error = false;
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "manojm@example.com";
-    $subject = "Portfolio Contact from " . htmlspecialchars($_POST["name"]);
-    $message = "Name: " . htmlspecialchars($_POST["name"]) . "\n";
-    $message .= "Email: " . htmlspecialchars($_POST["email"]) . "\n";
-    $message .= "Message:\n" . htmlspecialchars($_POST["message"]);
-    $headers = "From: " . htmlspecialchars($_POST["email"]);
-    if (mail($to, $subject, $message, $headers)) {
-        $success = true;
-    } else {
-        $error = true;
-    }
-}
-?>
+<!-- PHP removed: All server-side logic replaced with client-side JS/HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -203,29 +187,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
           </div>
         </div>
-        <form class="contact-form" method="post" autocomplete="off">
+        <form class="contact-form" id="contactForm" autocomplete="off">
           <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
           </div>
           <div class="form-group">
-            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
           </div>
           <div class="form-group">
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Send Message</button>
-          
-          <?php if($success): ?>
-            <div class="form-message success">
-              <i class="fas fa-check-circle"></i>
-              <span>Message sent successfully!</span>
-            </div>
-          <?php elseif($error): ?>
-            <div class="form-message error">
-              <i class="fas fa-exclamation-circle"></i>
-              <span>Error sending message. Please try again.</span>
-            </div>
-          <?php endif; ?>
+          <div id="formMessage" class="form-message" style="display:none;"></div>
         </form>
       </div>
     </div>
@@ -234,47 +207,60 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; <?php echo date('Y'); ?> Manoj M. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Manoj M. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Navigation Toggle Script -->
+  <!-- Navigation Toggle Script & Contact Form Handler -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // Navigation toggle
       const navbar = document.querySelector('.navbar');
       const toggle = document.querySelector('.nav-toggle');
-      
       toggle.addEventListener('click', function() {
         navbar.classList.toggle('nav-open');
         const expanded = navbar.classList.contains('nav-open');
         toggle.setAttribute('aria-expanded', expanded);
       });
-      
-      // Close menu when clicking on a link
       document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
           navbar.classList.remove('nav-open');
           toggle.setAttribute('aria-expanded', 'false');
         });
       });
-      
       // Active link highlight
       const sections = document.querySelectorAll('section');
       const navLinks = document.querySelectorAll('.nav-links a');
-      
       window.addEventListener('scroll', () => {
         let current = '';
         sections.forEach(sec => {
           const offset = sec.offsetTop - 150;
           if (scrollY >= offset) current = sec.getAttribute('id');
         });
-        
         navLinks.forEach(link => {
           link.classList.remove('active');
           if (link.getAttribute('href').includes(current)) {
             link.classList.add('active');
           }
         });
+      });
+      // Footer year
+      document.getElementById('year').textContent = new Date().getFullYear();
+      // Contact form handler
+      const contactForm = document.getElementById('contactForm');
+      const formMessage = document.getElementById('formMessage');
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        // Use mailto for client-side email
+        const mailtoLink = `mailto:manojm@example.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage:%0A${encodeURIComponent(message)}`;
+        window.location.href = mailtoLink;
+        formMessage.style.display = 'block';
+        formMessage.className = 'form-message success';
+        formMessage.innerHTML = '<i class="fas fa-check-circle"></i> <span>Message sent via your email client!</span>';
+        contactForm.reset();
       });
     });
   </script>
