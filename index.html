@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- Primary SEO & Recruiter Meta Tags -->
+  <title>Manoj M | Data Analyst — Business Intelligence, Python & SQL</title>
+  <meta name="title" content="Manoj M | Data Analyst — Business Intelligence, Python & SQL"/>
+  <meta name="description" content="Portfolio of Manoj M, an energetic Data Analyst specializing in Python, MySQL, MySQL Workbench, Power BI, Excel, Pandas, NumPy, Data Cleaning, Data Validation, and Data Analysis. Available for hire."/>
+  <meta name="keywords" content="Manoj M, Data Analyst, Business Intelligence, Python, MySQL, Power BI, Excel, Pandas, NumPy, Data Cleaning, Data Validation, Data Analysis, Hire Data Analyst"/>
+  <meta name="author" content="Manoj M"/>
+  <meta name="theme-color" content="#070a12"/>
+
+  <!-- Preconnect & Typography for High-Speed Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Ambient Dynamic Lighting & Subtle Grid -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-blob-1"></div>
+    <div class="ambient-blob-2"></div>
+    <div class="ambient-blob-3"></div>
+  </div>
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#about" class="logo-brand" aria-label="Manoj M Homepage">
+        <span class="logo-icon"><i class="fas fa-chart-line"></i></span>
+        <span class="logo-title">Manoj<span>.</span>M</span>
+        <span class="logo-status-tag"><i class="fas fa-circle" style="font-size: 0.5rem;"></i> Open to Work</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-item-link active">About</a></li>
+          <li><a href="#why-me" class="nav-item-link">Why Hire Me</a></li>
+          <li><a href="#skills" class="nav-item-link">Skills</a></li>
+          <li><a href="#projects" class="nav-item-link">Projects</a></li>
+          <li><a href="#methodology" class="nav-item-link">Methodology</a></li>
+          <li><a href="#contact" class="nav-item-link">Contact</a></li>
+          <li>
+            <a href="#contact" class="header-action-btn">
+              <i class="fas fa-briefcase"></i> Hire Manoj
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (High-Impact Recruiter Hook) -->
+    <section id="about" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Text Introduction -->
+          <div class="hero-text-col reveal-up">
+            <!-- Recruiter Ready Indicator -->
+            <div class="recruiter-badge">
+              <span class="pulsing-indicator"></span>
+              ACTIVELY INTERVIEWING &bull; Ready for Data Analyst Roles
+            </div>
+
+            <h1 class="hero-title">
+              Turning Raw Data into <span class="text-gradient">Actionable Growth.</span>
+            </h1>
+
+            <div class="hero-role-wrapper">
+              <span>Hi, I'm <strong>Manoj M</strong> &mdash;</span>
+              <span class="role-badge-text" id="roleTypewriter">Data Analyst</span>
+            </div>
+
+            <p class="hero-pitch">
+              A results-driven Data Analyst dedicated to helping teams make smarter, faster decisions. Proficient in applying rigorous <strong>Data Cleaning & Validation</strong>, writing structured <strong>MySQL</strong> queries, performing exploratory analysis with <strong>Pandas, NumPy, & Python Basics</strong>, and designing executive <strong>Power BI & Excel</strong> dashboards.
+            </p>
+
+            <!-- Recruiter Action Group -->
+            <div class="hero-cta-bar">
+              <a href="#contact" class="btn btn-primary-glow">
+                <i class="fas fa-envelope-open-text"></i> Connect / Hire Me
+              </a>
+              <a href="#projects" class="btn btn-glass">
+                <i class="fas fa-laptop-code"></i> View Projects
+              </a>
+              <a href="#skills" class="btn btn-glass">
+                <i class="fas fa-database"></i> Explore Skills
+              </a>
+            </div>
+
+            <!-- Direct Contact & Copy Email -->
+            <div class="hero-contact-row">
+              <a href="https://github.com/manojmm22" target="_blank" rel="noopener noreferrer" class="contact-pill-btn" title="GitHub Profile" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/manoj-m-471171330" target="_blank" rel="noopener noreferrer" class="contact-pill-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:manoj22m2003@gmail.com" class="contact-pill-btn" title="Send Email" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <button type="button" class="copy-email-fast" id="copyHeroBtn" title="Click to copy email address">
+                <i class="far fa-copy"></i> <span>Copy Email</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Hero Profile Image (Clean & Pristine halo without badge markers) -->
+          <div class="hero-visual reveal-up">
+            <div class="avatar-halo-card">
+              <div class="avatar-inner">
+                <img src="manoj-m-pic.jpg" alt="Manoj M - Data Analyst" width="320" height="320" loading="eager" fetchpriority="high">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recruiter Quick Snapshot Strip -->
+    <section class="snapshot-strip reveal-up" aria-label="Candidate Highlights">
+      <div class="container">
+        <div class="snapshot-grid">
+          <div class="snapshot-item">
+            <div class="snapshot-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <div class="snapshot-info">
+              <h4>10 Core</h4>
+              <p>Data Analytics Tools</p>
+            </div>
+          </div>
+
+          <div class="snapshot-item">
+            <div class="snapshot-icon">
+              <i class="fas fa-terminal"></i>
+            </div>
+            <div class="snapshot-info">
+              <h4>SQL & Python</h4>
+              <p>Core Analytics Stack</p>
+            </div>
+          </div>
+
+          <div class="snapshot-item">
+            <div class="snapshot-icon">
+              <i class="fas fa-shield-check"></i>
+            </div>
+            <div class="snapshot-info">
+              <h4>100% Quality</h4>
+              <p>Cleaning & Validation</p>
+            </div>
+          </div>
+
+          <div class="snapshot-item">
+            <div class="snapshot-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="snapshot-info">
+              <h4>&lt; 12 Hours</h4>
+              <p>Recruiter Response Time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- "Why Hire Me" Value Proposition Section -->
+    <section id="why-me" class="section value-section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-badge"><i class="fas fa-user-check"></i> Recruiter Value</span>
+          <h2 class="section-title">Why I am a Great Fit for Your Team</h2>
+          <p class="section-subtitle">
+            Hiring managers need someone who delivers clean, reliable data and speaks the language of business. Here is how I drive impact:
+          </p>
+        </div>
+
+        <div class="value-grid">
+          <div class="value-card reveal-up">
+            <div class="value-icon-box">
+              <i class="fas fa-filter-circle-dollar"></i>
+            </div>
+            <h3>Data Quality Obsessed</h3>
+            <p>
+              Bad data leads to bad decisions. I enforce rigorous validation checks, eliminate duplicates, handle null values, and ensure every dataset is dependable.
+            </p>
+          </div>
+
+          <div class="value-card reveal-up">
+            <div class="value-icon-box">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <h3>Executive Storytelling</h3>
+            <p>
+              I bridge numbers with business objectives using interactive Power BI & Excel dashboards that clearly highlight KPIs, trends, and growth opportunities.
+            </p>
+          </div>
+
+          <div class="value-card reveal-up">
+            <div class="value-icon-box">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>SQL & Python Foundations</h3>
+            <p>
+              Solid grasp of relational database queries, joins, and aggregations in MySQL, paired with foundational Python scripting using Pandas and NumPy for exploratory data analysis.
+            </p>
+          </div>
+
+          <div class="value-card reveal-up">
+            <div class="value-icon-box">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>High Energy & Fast Learner</h3>
+            <p>
+              Proactive, adaptable, and excited to tackle complex enterprise datasets. Ready to contribute immediately and scale with your organization's goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section: DATA ANALYTICS ONLY (10 Strictly Specified Skills) -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-badge"><i class="fas fa-brain"></i> Analytics Toolset</span>
+          <h2 class="section-title">Data Analytics Core Skills</h2>
+          <p class="section-subtitle">
+            Specialized exclusively in the end-to-end data lifecycle: extraction, wrangling, mathematical processing, quality assurance, and visual reporting.
+          </p>
+        </div>
+
+        <!-- Interactive Category Filter Tabs -->
+        <div class="skill-filter-bar reveal-up" role="tablist">
+          <button class="filter-btn active" data-filter="all">All Skills (10)</button>
+          <button class="filter-btn" data-filter="sql">SQL & Databases</button>
+          <button class="filter-btn" data-filter="python">Python (Basics) & Libraries</button>
+          <button class="filter-btn" data-filter="bi">BI & Spreadsheets</button>
+          <button class="filter-btn" data-filter="governance">Data Quality & EDA</button>
+        </div>
+
+        <!-- 10 Strictly Requested Skills -->
+        <div class="skills-grid" id="skillsGrid">
+          <!-- 1. Excel -->
+          <div class="skill-card reveal-up" data-category="bi">
+            <div class="skill-top">
+              <div class="skill-icon-frame icon-excel">
+                <i class="fas fa-file-excel"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-role-tag">Spreadsheets & Modeling</span>
+                <h3>Excel</h3>
+              </div>
+            </div>
+            <p>
+              Advanced formulas (XLOOKUP, INDEX-MATCH), dynamic Pivot Tables, data modeling, nested logic, conditional formatting, and executive KPI summary dashboards.
+            </p>
+            <div class="skill-badge-tags">
+              <span>Pivot Tables</span>
+              <span>XLOOKUP</span>
+              <span>KPI Dashboards</span>
+              <span>Data Sorting</span>
+            </div>
+          </div>
+
+          <!-- 2. Power BI -->
+          <div class="skill-card reveal-up" data-category="bi">
+            <div class="skill-top">
+              <div class="skill-icon-frame icon-powerbi">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-role-tag">Business Intelligence</span>
+                <h3>Power BI</h3>
+              </div>
+            </div>
+            <p>
+              Building interactive executive dashboards, DAX calculated measures, Power Query transformations, star-schema data modeling, and actionable business reporting.
+            </p>
+            <div class="skill-badge-tags">
+              <span>DAX Measures</span>
+              <span>Power Query</span>
+              <span>Data Modeling</span>
+              <span>Visual Reports</span>
+            </div>
+          </div>
+
+          <!-- 3. MySQL -->
+          <div class="skill-card reveal-up" data-category="sql">
+            <div class="skill-top">
+              <div class="skill-icon-frame icon-mysql">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-role-tag">Relational Database</span>
+                <h3>MySQL</h3>
+              </div>
+            </div>
+            <p>
+              Writing optimized complex SQL queries, multi-table JOINs, aggregations (GROUP BY, HAVING), CTEs, window functions, and maintaining relational integrity.
+            </p>
+            <div class="skill-badge-tags">
+              <span>Complex Queries</span>
+              <span>Joins & Aggregations</span>
+              <span>CTEs & Subqueries</span>
+              <span>Data Filtering</span>
+            </div>
+          </div>
+
+          <!-- 4. MySQL Workbench -->
+          <div class="skill-card reveal-up" data-category="sql">
+            <div class="skill-top">
+              <div class="skill-icon-frame icon-workbench">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-role-tag">Database Administration</span>
+                <h3>MySQL Workbench</h3>
+              </div>
+            </div>
+            <p>
+              Visual database architecture, ER diagram modeling, foreign key constraint management, query execution plan analysis, and database import/export pipelines.
+            </p>
+            <div class="skill-badge-tags">
+              <span>ER Diagramming</span>
+              <span>Schema Design</span>
+              <span>Query Optimization</span>
+              <span>Database Admin</span>
+            </div>
+          </div>
+
+          <!-- 5. Pandas -->
+          <div class="skill-card reveal-up" data-category="python">
+            <div class="skill-top">
+              <div class="skill-icon-frame icon-pandas">
+                <i class="fas fa-table-columns"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-role-tag">Data Wrangling</span>
+                <h3>Pandas</h3>
+              </div>
+            </div>
+            <p>
+              DataFrame manipulation, data filtering, restructuring, reshaping (merge, concat, melt, pivot), handling missing values, and data aggregation for analysis.
+            </p>
+            <div class="skill-badge-tags">
+              <span>DataFrames</span>
+              <span>Merging & Joining</span>
+              <span>Groupby Ops</span>
+              <span>Data Filtering</span>
+            </div>
+          </div>
+
+          <!-- 6. NumPy -->
+          <div class="skill-card reveal-up" data-category="python">
+            <div class="skill-top">
+              <div class="skill-icon-frame icon-numpy">
+                <i class="fas fa-superscript"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-role-tag">Numerical Computing</span>
+                <h3>NumPy</h3>
+              </div>
+            </div>
+            <p>
+              Multi-dimensional array computation, vectorization, mathematical statistical operations, broadcasting, and high-efficiency transformations on numerical datasets.
+            </p>
+            <div class="skill-badge-tags">
+              <span>N-D Arrays</span>
+              <span>Vectorization</span>
+              <span>Linear Operations</span>
+              <span>Matrix Math</span>
+            </div>
+          </div>
+
+          <!-- 7. Data Cleaning -->
+          <div class="skill-card reveal-up" data-category="governance">
+            <div class="skill-top">
+              <div class="skill-icon-frame icon-cleaning">
+                <i class="fas fa-broom"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-role-tag">Data Quality</span>
+                <h3>Data Cleaning</h3>
+              </div>
+            </div>
+            <p>
+              Resolving missing data (imputation), deduplicating records, parsing inconsistent date/text formats, outlier detection, and preparing raw datasets for error-free analytics.
+            </p>
+            <div class="skill-badge-tags">
+              <span>Null Imputation</span>
+              <span>Outlier Detection</span>
+              <span>Deduplication</span>
+              <span>Format Standards</span>
+            </div>
+          </div>
+
+          <!-- 8. Data Validation -->
+          <div class="skill-card reveal-up" data-category="governance">
+            <div class="skill-top">
+              <div class="skill-icon-frame icon-validation">
+                <i class="fas fa-circle-check"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-role-tag">Integrity & Governance</span>
+                <h3>Data Validation</h3>
+              </div>
+            </div>
+            <p>
+              Enforcing schema rules, boundary tests, data type validation, referential integrity verification, and cross-column sanity checks to ensure reliable reporting.
+            </p>
+            <div class="skill-badge-tags">
+              <span>Constraint Checks</span>
+              <span>Schema Verification</span>
+              <span>Quality Audits</span>
+              <span>Sanity Testing</span>
+            </div>
+          </div>
+
+          <!-- 9. Data Analysis -->
+          <div class="skill-card reveal-up" data-category="governance">
+            <div class="skill-top">
+              <div class="skill-icon-frame icon-analysis">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-role-tag">Core Analytics</span>
+                <h3>Data Analysis</h3>
+              </div>
+            </div>
+            <p>
+              In-depth Exploratory Data Analysis (EDA), hypothesis formulation, correlation analysis, pattern discovery, and translating raw data metrics into executive strategic insights.
+            </p>
+            <div class="skill-badge-tags">
+              <span>Exploratory EDA</span>
+              <span>Statistical Inference</span>
+              <span>Trend Forecasting</span>
+              <span>Pattern Discovery</span>
+            </div>
+          </div>
+
+          <!-- 10. Python Programming Language -->
+          <div class="skill-card reveal-up" data-category="python">
+            <div class="skill-top">
+              <div class="skill-icon-frame icon-python">
+                <i class="fab fa-python"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-role-tag">Core Fundamentals</span>
+                <h3>Python (Basics)</h3>
+              </div>
+            </div>
+            <p>
+              Fundamental concepts needed for data analytics: variables, datatypes, conditional logic (if-else), loops, basic arithmetic operations, and simple functions to read and inspect datasets.
+            </p>
+            <div class="skill-badge-tags">
+              <span>Basic Syntax</span>
+              <span>Conditional Logic</span>
+              <span>Dataset Loading</span>
+              <span>Basic Functions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology / Pipeline Section -->
+    <section id="methodology" class="section methodology-section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-badge"><i class="fas fa-diagram-project"></i> Workflow</span>
+          <h2 class="section-title">My Analytical Process</h2>
+          <p class="section-subtitle">
+            A disciplined, 4-step framework guarantees that every insight delivered to your team is clean, validated, and business-ready.
+          </p>
+        </div>
+
+        <div class="methodology-grid">
+          <div class="method-card reveal-up">
+            <span class="step-label">PHASE 01</span>
+            <h3>1. Extraction & Ingestion</h3>
+            <p>Extracting structured data from MySQL databases, Excel workbooks, and CSV sources using Python scripts and SQL queries.</p>
+          </div>
+
+          <div class="method-card reveal-up">
+            <span class="step-label">PHASE 02</span>
+            <h3>2. Cleaning & Wrangling</h3>
+            <p>Imputing missing values, removing outliers, standardizing datatypes, and reshaping data using Pandas and NumPy.</p>
+          </div>
+
+          <div class="method-card reveal-up">
+            <span class="step-label">PHASE 03</span>
+            <h3>3. Validation & Quality</h3>
+            <p>Executing schema verification, boundary constraint checks, and referential audits to eliminate discrepancies.</p>
+          </div>
+
+          <div class="method-card reveal-up">
+            <span class="step-label">PHASE 04</span>
+            <h3>4. Analysis & Dashboards</h3>
+            <p>Conducting statistical EDA, creating interactive Power BI KPI dashboards, and delivering actionable business takeaways.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Preserved Titles & Details Exactly) -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-badge"><i class="fas fa-folder-open"></i> Portfolio</span>
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">Recent work demonstrating practical problem-solving and software execution.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Blood Donor Management System -->
+          <article class="project-card reveal-up">
+            <div class="project-banner banner-1">
+              <i class="fas fa-heartbeat project-icon-visual"></i>
+              <span class="project-badge-overlay"><i class="fas fa-database"></i> Web Application</span>
+            </div>
+            <div class="project-body">
+              <h3>Blood Donor Management System</h3>
+              <p>
+                A web-based application for managing blood donors, donations, and requests. Features include donor registration, blood inventory tracking, and request management. Includes admin dashboard and user authentication system.
+              </p>
+              <div class="project-meta-pills">
+                <span class="project-pill">PHP</span>
+                <span class="project-pill">MySQL</span>
+                <span class="project-pill">HTML/CSS</span>
+                <span class="project-pill">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/manojmm22" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>View Details</span>
+                  <i class="fas fa-arrow-right project-link-icon"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Skin Disease Detection -->
+          <article class="project-card reveal-up">
+            <div class="project-banner banner-2">
+              <i class="fas fa-user-md project-icon-visual"></i>
+              <span class="project-badge-overlay"><i class="fas fa-brain"></i> Deep Learning</span>
+            </div>
+            <div class="project-body">
+              <h3>Skin Disease Detection</h3>
+              <p>
+                An intelligent system that uses deep learning algorithms to analyze and identify skin conditions from images. Built using MATLAB with CNN-based classification models. Achieved high accuracy in detecting various dermatological conditions.
+              </p>
+              <div class="project-meta-pills">
+                <span class="project-pill">MATLAB</span>
+                <span class="project-pill">Deep Learning</span>
+                <span class="project-pill">CNN</span>
+                <span class="project-pill">Image Processing</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/manojmm22" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>View Details</span>
+                  <i class="fas fa-arrow-right project-link-icon"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Portfolio Website -->
+          <article class="project-card reveal-up">
+            <div class="project-banner banner-3">
+              <i class="fas fa-laptop-code project-icon-visual"></i>
+              <span class="project-badge-overlay"><i class="fas fa-code"></i> Frontend</span>
+            </div>
+            <div class="project-body">
+              <h3>Portfolio Website</h3>
+              <p>
+                A modern, fully responsive personal portfolio website showcasing skills, projects, and professional experience. Features smooth animations, mobile-friendly design, and a clean user interface. Built with semantic HTML, CSS3, and JavaScript.
+              </p>
+              <div class="project-meta-pills">
+                <span class="project-pill">HTML5</span>
+                <span class="project-pill">CSS3</span>
+                <span class="project-pill">JavaScript</span>
+                <span class="project-pill">Responsive Design</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/manojmm22" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>View Details</span>
+                  <i class="fas fa-arrow-right project-link-icon"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recruiter Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-badge"><i class="fas fa-handshake"></i> Let's Connect</span>
+          <h2 class="section-title">Ready to Interview or Discuss Opportunities?</h2>
+          <p class="section-subtitle">
+            I am available for full-time Data Analyst roles, internships, and analytics projects. Let's start the conversation!
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Recruiter Contact Card -->
+          <div class="contact-card-info reveal-up">
+            <div class="recruiter-sla-pill">
+              <i class="fas fa-clock"></i> Usually responds within 12 hours
+            </div>
+
+            <h3>Contact Manoj M</h3>
+            <p>
+              Looking to fill a Data Analyst vacancy on your engineering, BI, or product team? I'm excited to share how my skills in Python, SQL, and Power BI can support your roadmap.
+            </p>
+
+            <div class="contact-channel-list">
+              <div class="contact-channel-item">
+                <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+                <div class="channel-meta">
+                  <span>Direct Email</span>
+                  <a href="mailto:manoj22m2003@gmail.com">manoj22m2003@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div class="channel-meta">
+                  <span>LinkedIn Network</span>
+                  <a href="https://www.linkedin.com/in/manoj-m-471171330" target="_blank" rel="noopener noreferrer">linkedin.com/in/manoj-m</a>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon"><i class="fab fa-github"></i></div>
+                <div class="channel-meta">
+                  <span>Code Repositories</span>
+                  <a href="https://github.com/manojmm22" target="_blank" rel="noopener noreferrer">github.com/manojmm22</a>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon"><i class="fas fa-location-dot"></i></div>
+                <div class="channel-meta">
+                  <span>Location Preference</span>
+                  <p>India &bull; Open to Remote &amp; On-Site Relocation</p>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="copy-email-fast" id="copyCardBtn">
+              <i class="far fa-copy"></i> <span>Copy Email Address</span>
+            </button>
+          </div>
+
+          <!-- Recruiter Contact Form -->
+          <div class="contact-form-card reveal-up">
+            <form id="contactForm" autocomplete="off">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Your Name / Recruiter</label>
+                  <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Work Email</label>
+                  <input type="email" id="contactEmail" name="email" class="form-input" placeholder="e.g. john@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Inquiry / Opportunity Type</label>
+                <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="e.g. Data Analyst Role at [Company Name]" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message / Role Details</label>
+                <textarea id="contactMessage" name="message" class="form-input" placeholder="Tell me about the role, required experience, or your timeline for hiring..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary-glow" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i> Send Direct Message
+              </button>
+
+              <div id="formAlert" class="form-alert" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p>&copy; <span id="currentYear"></span> <strong>Manoj M</strong> &mdash; Specialized Data Analyst Portfolio. All rights reserved.</p>
+      </div>
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#why-me">Why Hire Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Scroll To Top -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Lightweight, High-Performance Scripts -->
+  <script>
+    (function() {
+      'use strict';
+
+      // 1. Current Year
+      const yearSpan = document.getElementById('currentYear');
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+      // 2. Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.getElementById('navLinks');
+
+      if (mobileBtn && navLinks) {
+        mobileBtn.addEventListener('click', () => {
+          const isOpen = navLinks.classList.toggle('open');
+          mobileBtn.classList.toggle('active', isOpen);
+          mobileBtn.setAttribute('aria-expanded', isOpen);
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            mobileBtn.classList.remove('active');
+            mobileBtn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      // 3. Navbar Scrolled State & Section Spy
+      const header = document.getElementById('header');
+      const sections = document.querySelectorAll('section[id]');
+      const navAnchors = document.querySelectorAll('.nav-item-link');
+      const backToTop = document.getElementById('backToTop');
+
+      function onScroll() {
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (header) {
+          header.classList.toggle('scrolled', scrollY > 40);
+        }
+
+        if (backToTop) {
+          backToTop.classList.toggle('visible', scrollY > 450);
+        }
+
+        let activeId = '';
+        sections.forEach(sec => {
+          const top = sec.offsetTop - 120;
+          const height = sec.offsetHeight;
+          if (scrollY >= top && scrollY < top + height) {
+            activeId = sec.getAttribute('id');
+          }
+        });
+
+        if (activeId) {
+          navAnchors.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === '#' + activeId);
+          });
+        }
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      if (backToTop) {
+        backToTop.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      // 4. Ultra-Fast IntersectionObserver Reveal Animations
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.1,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
+      } else {
+        document.querySelectorAll('.reveal-up').forEach(el => el.classList.add('active'));
+      }
+
+      // 5. Enthusiastic Typing Effect (Zero bloat)
+      const roles = [
+        'Data Analyst',
+        'SQL & Power BI Developer',
+        'Data Cleaning & Validation Pro',
+        'Python (Basics) & Analytics',
+        'Business Intelligence Problem Solver'
+      ];
+      const typedEl = document.getElementById('roleTypewriter');
+      let roleIdx = 0;
+      let charIdx = 0;
+      let isDeleting = false;
+
+      function typeLoop() {
+        if (!typedEl) return;
+        const currentRole = roles[roleIdx];
+
+        if (isDeleting) {
+          typedEl.textContent = currentRole.substring(0, charIdx - 1);
+          charIdx--;
+        } else {
+          typedEl.textContent = currentRole.substring(0, charIdx + 1);
+          charIdx++;
+        }
+
+        let speed = isDeleting ? 28 : 65;
+
+        if (!isDeleting && charIdx === currentRole.length) {
+          speed = 1900;
+          isDeleting = true;
+        } else if (isDeleting && charIdx === 0) {
+          isDeleting = false;
+          roleIdx = (roleIdx + 1) % roles.length;
+          speed = 400;
+        }
+
+        setTimeout(typeLoop, speed);
+      }
+      setTimeout(typeLoop, 450);
+
+      // 6. Interactive Category Filter for the 10 Data Analytics Skills
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const skillCards = document.querySelectorAll('.skill-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.getAttribute('data-filter');
+
+          skillCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // 7. Instant Copy Email Helper
+      function bindCopyEmail(btnId) {
+        const btn = document.getElementById(btnId);
+        if (!btn) return;
+        btn.addEventListener('click', () => {
+          const email = 'manoj22m2003@gmail.com';
+          navigator.clipboard.writeText(email).then(() => {
+            const original = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check" style="color: #10b981;"></i> <span>Copied!</span>';
+            setTimeout(() => {
+              btn.innerHTML = original;
+            }, 2000);
+          }).catch(() => {
+            window.location.href = 'mailto:' + email;
+          });
+        });
+      }
+      bindCopyEmail('copyHeroBtn');
+      bindCopyEmail('copyCardBtn');
+
+      // 8. Recruiter Contact Form Handler
+      const contactForm = document.getElementById('contactForm');
+      const formAlert = document.getElementById('formAlert');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('contactName').value.trim();
+          const email = document.getElementById('contactEmail').value.trim();
+          const subject = document.getElementById('contactSubject').value.trim();
+          const message = document.getElementById('contactMessage').value.trim();
+
+          const mailto = `mailto:manoj22m2003@gmail.com?subject=${encodeURIComponent(subject + ' - from ' + name)}&body=${encodeURIComponent('Sender: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message)}`;
+
+          window.location.href = mailto;
+
+          if (formAlert) {
+            formAlert.className = 'form-alert success';
+            formAlert.innerHTML = '<i class="fas fa-circle-check"></i> <span>Opening your email client to send message to Manoj. Thank you!</span>';
+            formAlert.style.display = 'flex';
+          }
+          contactForm.reset();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
